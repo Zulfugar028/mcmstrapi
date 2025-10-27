@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries We Serve</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- SEO Title -->
+    <title>Industries we serve | Meta Chemicals & Machinery</title>
+
+    <meta name="description"
+        content="MCM müxtəlif sənaye sahələri üçün fərdi avtomatlaşdırma və rəqəmsal transformasiya həlləri təqdim edir — neft-qaz, enerji, logistika, tikinti və dövlət sektoru.">
+
+    <meta name="description"
+        content="MCM provides tailored automation and digital transformation solutions across industries — oil & gas, energy, logistics, construction and public sector.">
+
+    <meta name="description"
+        content="MCM предлагает решения по автоматизации и цифровой трансформации для различных отраслей — нефть и газ, энергетика, логистика, строительство и госсектор.">
+
+
+    <!-- Author -->
+    <meta name="author" content="Meta Chemicals & Machinery">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_menu">
+                <div class="header_content_menu">
+                    <a href="index.html" class="logo">
+                        <img src="img/mcmlogo.jpg" alt="MCM logo">
+                    </a>
+
+                    <nav class="nav">
+                        <div class="openMenu" onclick="toggleMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                        <div class="exit" onclick="toggleMenu()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+
+                        <!-- <div class="signdemo">
+                            <a href="" onclick="openDemo()">
+                                <button>Sign for Demo</button>
+                            </a>
+                        </div> -->
+
+                        <ul class="nav_list">
+                            <li class="nav_item">
+                                <a href="services.html">Our Services</a>
+                            </li>
+
+                            <li class="nav_item">
+                                <a href="about.html">About Us</a>
+                            </li>
+
+                            <li class="nav_item">
+                                <a href="cases.html">Cases</a>
+                            </li>
+
+                            <!-- <li class="nav_item">
+                                <a href="partners.html">Partners & Certifications</a>
+                            </li> -->
+
+                            <li class="nav_item">
+                                <a href="blog.html">Blog</a>
+                            </li>
+
+                            <li class="nav_item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+
+                            <li class="nav_item">
+                                <!-- <butto onclick="openDemo()">
+                                    <a href="#" onclick="openDemo()">Demo</a>
+                                </butto> -->
+                            </li>
+
+                            <li class="nav_item language-mobile">
+                                <div class="lang-menu-mobile">
+                                    <div onclick="setLanguage('az')">AZ</div>
+                                    <div onclick="setLanguage('en')">EN</div>
+                                    <div onclick="setLanguage('ru')">RU</div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <!-- <div class="mobile-signin">
+                            <a href="signin.html" class="btn-signin">Sign In</a>
+                        </div> -->
+                    </nav>
+
+                    <div class="demo-modal" id="demoModal">
+                        <div class="demo-content">
+                            <div class="demo-img">
+                                <img src="img/mcmlogo.jpg" alt="">
+                            </div>
+                            <span class="close-btn" onclick="closeDemo()">&times;</span>
+                            <h2>Request a Demo</h2>
+                            <p>Fill in the form below and we will contact you soon.</p>
+                            <form>
+                                <input type="text" placeholder="Your Name" required>
+                                <input type="email" placeholder="Your Email" required>
+                                <input type="tel" placeholder="Phone Number" required>
+                                <button type="submit">Get Demo Access</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="language-dropdown">
+                        <button class="lang-btn" onclick="toggleLangMenu()">
+                            <i class="fa-solid fa-globe"></i>
+                        </button>
+                        <div class="lang-menu">
+                            <div onclick="setLanguage('az')">AZ</div>
+                            <div onclick="setLanguage('en')">EN</div>
+                            <div onclick="setLanguage('ru')">RU</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <section class="industries">
+            <div class="container">
+                <h1 class="industries-title">Industries We Serve</h1>
+                <div class="industries-list">
+                    <span onclick="scrollToIndustry('oilandgas')">Oil & Gas</span>
+                    <span onclick="scrollToIndustry('heavyindustry')">Construction & Heavy Industry</span>
+                    <span onclick="scrollToIndustry('publicsector')">Public Sector</span>
+                    <span onclick="scrollToIndustry('airports')">Airports, Ports & Terminals</span>
+                    <span onclick="scrollToIndustry('energy')">Utilities & Energy</span>
+                    <span onclick="scrollToIndustry('logistics')">Logistics & Warehousing</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="industry" id="oilandgas">
+            <h2>Oil and Gas</h2>
+            <div class="cases">
+                <div class="case" id="oilandgas">
+                    <img src="img/840840p1231EDNmainoil-and-gas-industry-overview1.webp" alt="Geneticlab Nutrition">
+                    <h3>«Geneticlab Nutrition»</h3>
+                    <p>ERP tətbiqi — idman qidası istehsalının avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/flame-2720980_1280.jpg" alt="Nutrilent">
+                    <h3>«Nutrilent kontrakt istehsal»</h3>
+                    <p>ERP tətbiqi — istehsal, anbar və satınalmaların avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/gas-station-4978824_1280.jpg" alt="Mote">
+                    <h3>«Mote»</h3>
+                    <p>ERP tətbiqi — satınalmalar, anbar, müddətlərin idarə olunması</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="industry" id="heavyindustry">
+            <h2>Construction & Heavy industry</h2>
+            <div class="cases">
+                <div class="case">
+                    <img src="img/1696273023208.webp" alt="Geneticlab Nutrition">
+                    <h3>«Geneticlab Nutrition»</h3>
+                    <p>ERP tətbiqi — idman qidası istehsalının avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/mining-excavator-1736293_1280.jpg" alt="Nutrilent">
+                    <h3>«Nutrilent kontrakt istehsal»</h3>
+                    <p>ERP tətbiqi — istehsal, anbar və satınalmaların avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/digger-1867268_1280.jpg" alt="Mote">
+                    <h3>«Mote»</h3>
+                    <p>ERP tətbiqi — satınalmalar, anbar, müddətlərin idarə olunması</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="industry">
+            <h2>Construction & Heavy industry</h2>
+            <div class="cases">
+                <div class="case">
+                    <img src="img/840840p1231EDNmainoil-and-gas-industry-overview1.webp" alt="Geneticlab Nutrition">
+                    <h3>«Geneticlab Nutrition»</h3>
+                    <p>ERP tətbiqi — idman qidası istehsalının avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/flame-2720980_1280.jpg" alt="Nutrilent">
+                    <h3>«Nutrilent kontrakt istehsal»</h3>
+                    <p>ERP tətbiqi — istehsal, anbar və satınalmaların avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/gas-station-4978824_1280.jpg" alt="Mote">
+                    <h3>«Mote»</h3>
+                    <p>ERP tətbiqi — satınalmalar, anbar, müddətlərin idarə olunması</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="industry" id="airports">
+            <h2>Airports, Ports, Terminals</h2>
+            <div class="cases">
+                <div class="case">
+                    <img src="img/heydar_aliyev_airport_300519_01.jpg" alt="Geneticlab Nutrition">
+                    <h3>«Geneticlab Nutrition»</h3>
+                    <p>ERP tətbiqi — idman qidası istehsalının avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/airplane-7116299_1280.jpg" alt="Nutrilent">
+                    <h3>«Nutrilent kontrakt istehsal»</h3>
+                    <p>ERP tətbiqi — istehsal, anbar və satınalmaların avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/airport-2373727_1280.jpg" alt="Mote">
+                    <h3>«Mote»</h3>
+                    <p>ERP tətbiqi — satınalmalar, anbar, müddətlərin idarə olunması</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="industry" id="energy">
+            <h2>Utilities & Energy</h2>
+            <div class="cases">
+                <div class="case">
+                    <img src="img/Hero-L1-Energy-and-Utilities-5000x2500_B.avif" alt="Geneticlab Nutrition">
+                    <h3>«Geneticlab Nutrition»</h3>
+                    <p>ERP tətbiqi — idman qidası istehsalının avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/power-lines-532720_1280.jpg" alt="Nutrilent">
+                    <h3>«Nutrilent kontrakt istehsal»</h3>
+                    <p>ERP tətbiqi — istehsal, anbar və satınalmaların avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/sunrise-7674594_1280.jpg" alt="Mote">
+                    <h3>«Mote»</h3>
+                    <p>ERP tətbiqi — satınalmalar, anbar, müddətlərin idarə olunması</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="industry" id="logistics">
+            <h2>Logistics & Warehousing</h2>
+            <div class="cases">
+                <div class="case">
+                    <img src="img/630-July-Santos-International-Social-Thumbnail.webp" alt="Geneticlab Nutrition">
+                    <h3>«Geneticlab Nutrition»</h3>
+                    <p>ERP tətbiqi — idman qidası istehsalının avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/railway-station-1363771_1280.jpg" alt="Nutrilent">
+                    <h3>«Nutrilent kontrakt istehsal»</h3>
+                    <p>ERP tətbiqi — istehsal, anbar və satınalmaların avtomatlaşdırılması</p>
+                </div>
+                <div class="case">
+                    <img src="img/container-789488_1280.jpg" alt="Mote">
+                    <h3>«Mote»</h3>
+                    <p>ERP tətbiqi — satınalmalar, anbar, müddətlərin idarə olunması</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer_brand">
+                    <img src="img/mcmlogo.jpg" alt="MCM Logo" class="footer_logo">
+                    <p>
+                        Meta Chemicals & Machinery — sənaye, avtomatlaşdırma və təhlükəsizlik sahələrində
+                        qabaqcıl texnologiyalar təqdim edir.
+                    </p>
+                    <div class="social_links">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer_menu">
+                    <h4>Xidmətlər</h4>
+                    <ul>
+                        <li><a href="services.html">Avtomatlaşdırma</a></li>
+                        <li><a href="services.html">Təhlükəsizlik sistemləri</a></li>
+                        <li><a href="services.html">Məlumat mərkəzləri</a></li>
+                        <li><a href="services.html">Süni intellekt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_menu">
+                    <h4>Şirkət</h4>
+                    <ul>
+                        <li><a href="about.html">Biz kimik?</a></li>
+                        <li><a href="partners.html">Partnyorlar</a></li>
+                        <li><a href="blog.html">Bloq</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_contact">
+                    <h4>Əlaqə</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Bakı, Azərbaycan</p>
+                    <p><i class="fa-solid fa-phone"></i> (+994) 50 123 45 67</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@mcm.az</p>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <p>© 2025 MCM. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="lang.js"></script>
+</body>
+
+</html>
