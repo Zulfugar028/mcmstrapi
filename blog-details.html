@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_menu">
+                <div class="header_content_menu">
+                    <a href="index.html" class="logo">
+                        <img src="img/mcmlogo.jpg" alt="MCM logo">
+                    </a>
+
+                    <nav class="nav">
+                        <div class="openMenu" onclick="toggleMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                        <div class="exit" onclick="toggleMenu()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+
+                        <ul class="nav_list">
+                            <li class="nav_item">
+                                <a href="services.html">Our Services</a>
+                            </li>
+
+                            <li class="nav_item">
+                                <a href="about.html">About Us</a>
+                            </li>
+
+                            <li class="nav_item">
+                                <a href="cases.html">Cases</a>
+                            </li>
+
+                            <li class="nav_item">
+                                <a href="blog.html">Blog</a>
+                            </li>
+
+                            <li class="nav_item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+
+                            <li class="nav_item">
+                                <!-- <butto onclick="openDemo()">
+                                    <a href="#" onclick="openDemo()">Demo</a>
+                                </butto> -->
+                            </li>
+
+                            <li class="nav_item language-mobile">
+                                <div class="lang-menu-mobile">
+                                    <div onclick="setLanguage('az')">AZ</div>
+                                    <div onclick="setLanguage('en')">EN</div>
+                                    <div onclick="setLanguage('ru')">RU</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="demo-modal" id="demoModal">
+                        <div class="demo-content">
+                            <div class="demo-img">
+                                <img src="img/mcmlogo.jpg" alt="">
+                            </div>
+                            <span class="close-btn" onclick="closeDemo()">&times;</span>
+                            <h2>Request a Demo</h2>
+                            <p>Fill in the form below and we will contact you soon.</p>
+                            <form>
+                                <input type="text" placeholder="Your Name" required>
+                                <input type="email" placeholder="Your Email" required>
+                                <input type="tel" placeholder="Phone Number" required>
+                                <button type="submit">Get Demo Access</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="language-dropdown">
+                        <button class="lang-btn" onclick="toggleLangMenu()">
+                            <i class="fa-solid fa-globe"></i>
+                        </button>
+                        <div class="lang-menu">
+                            <div onclick="setLanguage('az')">AZ</div>
+                            <div onclick="setLanguage('en')">EN</div>
+                            <div onclick="setLanguage('ru')">RU</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section class="blog_details">
+        <div class="container">
+            <div class="blog_header" id="blogHeader">
+
+            </div>
+
+            <div class="blog_banner" id="blogBanner">
+
+            </div>
+
+            <div class="blog_content" id="blogContent">
+
+            </div>
+
+            <div class="blog_share">
+                <h3>Share this post:</h3>
+                <div class="social_share">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer_brand">
+                    <img src="img/mcmlogo.jpg" alt="MCM Logo" class="footer_logo">
+                    <p>
+                        Meta Chemicals & Machinery — sənaye, avtomatlaşdırma və təhlükəsizlik sahələrində
+                        qabaqcıl texnologiyalar təqdim edir.
+                    </p>
+                    <div class="social_links">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer_menu">
+                    <h4>Xidmətlər</h4>
+                    <ul>
+                        <li><a href="services.html">Avtomatlaşdırma</a></li>
+                        <li><a href="services.html">Təhlükəsizlik sistemləri</a></li>
+                        <li><a href="services.html">Məlumat mərkəzləri</a></li>
+                        <li><a href="services.html">Süni intellekt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_menu">
+                    <h4>Şirkət</h4>
+                    <ul>
+                        <li><a href="about.html">Biz kimik?</a></li>
+                        <li><a href="partners.html">Partnyorlar</a></li>
+                        <li><a href="blog.html">Bloq</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_contact">
+                    <h4>Əlaqə</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Bakı, Azərbaycan</p>
+                    <p><i class="fa-solid fa-phone"></i> (+994) 50 123 45 67</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@mcm.az</p>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <p>© 2025 MCM. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="lang.js"></script>
+    <script src="blog-details.js"></script>
+</body>
+
+</html>
